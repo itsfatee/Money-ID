@@ -1,0 +1,13 @@
+{% extends 'money_id/base.html'%}
+{% block content %}
+    <div class="row center noexpense">
+        <form method = "post" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+        {{ form.as_p }} 
+        <button type="submit" class="btn-large waves-effect waves-light black lighten-1">
+            Upload
+            <i class="large material-icons">cloud_upload</i>
+        </button> 
+    </form> 
+    </div>
+{% endblock %}

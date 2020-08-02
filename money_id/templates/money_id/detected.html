@@ -1,0 +1,8 @@
+{% extends 'money_id/base.html'%}
+{% block content %}
+    {% if billet and devise %}
+        <h1 class="row center noexpense">On a detecté un billet de {{billet}} {{devise}}</h1>
+    {% else %}
+        <h1 class="row center noexpense">On n'a pas pu detecter correctement le billet ou la devise du billet</h1>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'money_id/base.html'%}
+{% block content %}
+  <div id="index-banner">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center grey-text darken-4-text">Money Id</h1>
+        <div class="row center">
+          <h5 class="col s12">Une application pour les non-voyants afin de les aider à identifier les billets qu'ils ont en leur possession.</h5>
+          <a href="{% url 'money_id:upload'%}" class="btn-large waves-effect waves-light black lighten-1">
+            Uploader
+            <i class="large material-icons">cloud_upload</i>
+          </a>
+          <a href="{% url 'money_id:capture'%}" class="btn-large waves-effect waves-light black lighten-1">
+            Capturer
+            <i class="large material-icons">add_a_photo</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
